@@ -16,7 +16,6 @@ You can create a merge request with your driver source files. Your driver must b
 | Type     | Description                                                                                                                               |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Generic  | The drivers that are for type of hardware and not a specific device. (eg. Generic VGA Driver -> A driver that can run on all GPUs)        |
-|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Specific | Drivers for specific hardware (eg. NVIDIA GeForce 8800 GTS 512 -> A driver for this GPU only)                                             |
 
 ## License
