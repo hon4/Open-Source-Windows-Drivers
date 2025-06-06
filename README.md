@@ -12,13 +12,9 @@ All these drivers are tested with WDK (Windows Driver Kit) Version 7.1.0 and wor
 You can create a merge request with your driver source files. Your driver must be compatible with WDK 7.1.0 and Windows XP to be merged.
 
 ## Types
-+----------+
 | Generic  |
-+----------+
+|----------|
 | Specific |
-+----------+
-- Generic
-- Specific
 
 ## License
 All of this code is completely open source. You can copy, edit, modify, build your own code based on it, and generally do whatever you want.
