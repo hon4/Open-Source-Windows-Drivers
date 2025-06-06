@@ -12,7 +12,10 @@ All these drivers are tested with WDK (Windows Driver Kit) Version 7.1.0 and wor
 You can create a merge request with your driver source files. Your driver must be compatible with WDK 7.1.0 and Windows XP to be merged.
 
 ## Driver Types
-| Generic  | The drivers that are not designed for specific hardware and works for all. (eg. Generic VGA Driver -> A driver that can run on all GPUs)  |
+
+| Type     | Description                                                                                                                               |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Generic  | The drivers that are for type of hardware and not a specific device. (eg. Generic VGA Driver -> A driver that can run on all GPUs)        |
 |----------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | Specific | Drivers for specific hardware (eg. NVIDIA GeForce 8800 GTS 512 -> A driver for this GPU only)                                             |
 
