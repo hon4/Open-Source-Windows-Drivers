@@ -1,0 +1,30 @@
+; Minimal drv.inf to install drv.sys on Windows XP
+
+[Version]
+Signature="$Windows NT$"
+DriverVer=05/01/2025,1.0.0.0
+
+[SourceDisksNames]
+1 = %DiskName%,,,
+
+[SourceDisksFiles]
+drv.sys=1
+
+[DestinationDirs]
+DefaultDestDir=12
+
+[DefaultInstall]
+CopyFiles=DriverCopyFiles
+AddService=drv, 0x00000002, Service_Inst
+
+[DriverCopyFiles]
+drv.sys
+
+[Service_Inst]
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\drv.sys
+
+[Strings]
+DiskName="Driver Disk"
