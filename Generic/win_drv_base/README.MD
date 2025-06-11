@@ -19,3 +19,4 @@ sc create drv type= kernel binPath= C:\WINDOWS\system32\drivers\drv.sys
 sc start drv
 ```
 You will see this in the DebugView
+![DebugView DriverEntry](https://i.postimg.cc/wx2jx0Xk/dbgview.png)
