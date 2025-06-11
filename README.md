@@ -5,6 +5,9 @@ Open Source Windows Driver Source Codes
 The drivers in this repository just work, there is no guarantee that they will function properly.
 Use at your own risk.
 
+## Target
+The target of this project is to provide (mainly generic) drivers compatible with modern hardware for Windows XP to 7.
+
 ## OS Support
 All these drivers are tested with WDK (Windows Driver Kit) Version 7.1.0 and work on Windows XP and newer.
 
