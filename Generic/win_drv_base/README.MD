@@ -21,3 +21,10 @@ sc start drv
 You will see this in DebugView
 
 ![DebugView DriverEntry](https://i.postimg.cc/wx2jx0Xk/dbgview.png)
+
+-. And for driver stop:
+```
+sc stop drv
+```
+You will see.
+![DebugView DriverUnload](https://i.postimg.cc/zXktcR1v/dbgviewdu.png)
