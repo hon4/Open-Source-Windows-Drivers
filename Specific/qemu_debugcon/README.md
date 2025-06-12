@@ -5,6 +5,9 @@
 |-------------------|--------------------------|
 | Driver ID:        | qemu_debugcon            |
 
+## Description
+A driver for using QEMU's DebugCon from Windows guest operating systems.
+
 ## Tests
 | Operating System | Pass/Fail |
 |------------------|-----------|
