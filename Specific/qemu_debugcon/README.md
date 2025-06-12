@@ -17,7 +17,7 @@ If you know how to fix any of the following write an Issue or create a Pull Requ
 ## Tests
 | Operating System | Pass/Fail |
 |------------------|-----------|
-| Windows XP       | -         |
+| Windows XP       | Pass      |
 | Windows XP x64   | -         |
 | Windows 7        | -         |
 | Windows 7 x64    | -         |
