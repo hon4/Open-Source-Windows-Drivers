@@ -1,4 +1,4 @@
-SOURCES=drv.c
+SOURCES=drv.c version.rc
 TARGETNAME=qemu_debugcon
 TARGETPATH=OBJ
 TARGETTYPE=DRIVER
