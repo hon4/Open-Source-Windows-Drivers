@@ -1,0 +1,52 @@
+; hon QEMU DebugCon Driver for Windows XP
+; Driver Version date is MM/DD/YYYY format
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGUID={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%ProviderName%
+DriverVer=06/11/2025,1.0.0.0
+
+[Manufacturer]
+%ProviderName%=Standard,NTx86
+
+[Standard.NTx86]
+%DeviceName%=Install,root\qemu_debugcon
+
+[SourceDisksNames]
+1 = %DiskName%,,,\
+
+[SourceDisksFiles]
+qemu_debugcon.sys = 1
+
+[DestinationDirs]
+DefaultDestDir = 12 ; DIRID_DRIVERS
+
+[Install]
+CopyFiles=DriverCopyFiles
+Include=Install.Services
+
+[DriverCopyFiles]
+qemu_debugcon.sys
+
+[Service_Inst]
+DisplayName    = %DriverServiceDispName%
+ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
+StartType      = 3 ; SERVICE_DEMAND_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\qemu_debugcon.sys
+LoadOrderGroup = Extended Base
+
+[Install.Services]
+AddService=qemu_debugcon, 0x00000002, Service_Inst
+
+[DefaultInstall]
+CopyFiles=DriverCopyFiles
+AddService=qemu_debugcon, 0x00000002, Service_Inst
+
+[Strings]
+DiskName="hon QEMU DebugCon Installation Disk"
+ProviderName="honCode 2025"
+DeviceName="hon QEMU DebugCon"
+DriverServiceDispName="hon QEMU DebugCon Driver"
