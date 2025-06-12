@@ -19,7 +19,7 @@ BEGIN
             VALUE "OriginalFilename", "qemu_debugcon.sys"
             VALUE "ProductName", "hon QEMU DebugCon Driver"
             VALUE "ProductVersion", "1.0.0.0"
-            VALUE "LegalCopyright", "© 2025 honCode"
+            VALUE "LegalCopyright", "© honCode 2025"
             VALUE "CompanyName", "honCode 2025"
         END
     END
