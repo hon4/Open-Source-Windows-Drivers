@@ -1,0 +1,30 @@
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+FILEVERSION 1,0,0,0
+PRODUCTVERSION 1,0,0,0
+FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
+FILEFLAGS 0
+FILEOS VOS_NT
+FILETYPE VFT_DRV
+FILESUBTYPE VFT2_DRV_SYSTEM
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"  // Language and code page (U.S. English)
+        BEGIN
+            VALUE "FileDescription", "hon QEMU DebugCon Driver"
+            VALUE "FileVersion", "1.0.0.0"
+            VALUE "InternalName", "qemu_debugcon.sys"
+            VALUE "OriginalFilename", "qemu_debugcon.sys"
+            VALUE "ProductName", "hon QEMU DebugCon Driver"
+            VALUE "ProductVersion", "1.0.0.0"
+            VALUE "LegalCopyright", "© 2025 honCode"
+            VALUE "CompanyName", "honCode 2025"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200  // English (U.S.), Unicode
+    END
+END
