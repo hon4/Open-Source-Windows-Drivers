@@ -8,6 +8,11 @@
 ## Description
 A driver for using QEMU's DebugCon from Windows guest operating systems.
 
+## Issues
+| Issue ID | File              | Description |
+|----------|-------------------|-------------|
+| 1        | qemu_debugcon.inf |             |
+
 ## Tests
 | Operating System | Pass/Fail |
 |------------------|-----------|
