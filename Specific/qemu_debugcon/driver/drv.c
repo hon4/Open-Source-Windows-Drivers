@@ -14,7 +14,7 @@ Example Usage:
 
 NTSTATUS DriverEntry(IN PDRIVER_OBJECT DriverObject, IN PUNICODE_STRING RegistryPath);
 VOID DriverUnload(IN PDRIVER_OBJECT DriverObject);
-VOID WriteDebugConChar(CHAR c);
+VOID WriteDebugConChar(const char c);
 VOID DebugConPrintStr(const char* str);
 NTSTATUS DeviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp);
 NTSTATUS CreateClose(PDEVICE_OBJECT DeviceObject, PIRP Irp);
@@ -75,7 +75,7 @@ VOID DriverUnload(IN PDRIVER_OBJECT DriverObject) {
     //DbgPrint("DriverUnload called\n");
 }
 
-VOID WriteDebugConChar(CHAR c) {
+VOID WriteDebugConChar(const char c) {
     __asm {
         mov al, c
         out 0xE9, al
