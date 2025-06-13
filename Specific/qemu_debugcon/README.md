@@ -19,7 +19,7 @@ If you know how to fix any of the following write an Issue or create a Pull Requ
 |------------------|-----------|
 | Windows XP       | Pass      |
 | Windows XP x64   | -         |
-| Windows 7        | -         |
+| Windows 7        | Pass      |
 | Windows 7 x64    | -         |
 
 ## Resource Usage
