@@ -76,6 +76,7 @@ VOID DriverUnload(IN PDRIVER_OBJECT DriverObject) {
 }
 
 VOID WriteDebugConChar(const char c) {
+    // Write char to QEMU DebugCon I/O Port (0xE9)
     __asm {
         mov al, c
         out 0xE9, al
@@ -87,6 +88,7 @@ VOID DebugConPrintStr(const char* str) {
     if (str == NULL) {
         return;
     }
+    // While str[i] is not 0 (null rerminated string) keep printing chars
     for (i = 0; str[i] != 0; i++) {
         WriteDebugConChar(str[i]);
     }
@@ -110,7 +112,7 @@ NTSTATUS DeviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
                 inputBuffer[inputBufferLength] = '\0';
             }
 
-            // Call your kernel print function
+            // Call QEMU DebugCon print string function
             DebugConPrintStr(inputBuffer);
 
             status = STATUS_SUCCESS;
@@ -121,6 +123,7 @@ NTSTATUS DeviceControl(PDEVICE_OBJECT DeviceObject, PIRP Irp) {
         break;
     }
     default:
+        // Invalid Device Function
         status = STATUS_INVALID_DEVICE_REQUEST;
         break;
     }
