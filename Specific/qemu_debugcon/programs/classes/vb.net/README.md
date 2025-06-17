@@ -11,7 +11,7 @@
 
 ## Example Usage
 The commands are like vb.net ConsoleApplication Write and WriteLine.
-1. Write: Writes to DebugCon without new line.
+1. ***Write***: Writes to DebugCon without new line.
    Usage:
    ```
    DebugCon.Write("Your string.")
@@ -20,7 +20,7 @@ The commands are like vb.net ConsoleApplication Write and WriteLine.
    ```
    DebugCon.Write(TextBox1.Text)
    ```
-2. WriteLine: Writes to DebugCon with newline.
+2. ***WriteLine***: Writes to DebugCon with newline.
    Usage:
    ```
    DebugCon.WriteLine("Your string.")
