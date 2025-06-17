@@ -3,8 +3,8 @@
 
 [Version]
 Signature="$Windows NT$"
-Class=Ports
-ClassGUID={4D36E978-E325-11CE-BFC1-08002BE10318}
+Class=System
+ClassGUID={4D36E97D-E325-11CE-BFC1-08002BE10318}
 Provider=%ProviderName%
 DriverVer=06/11/2025,1.0.0.0
 
@@ -13,6 +13,7 @@ DriverVer=06/11/2025,1.0.0.0
 
 [Standard.NTx86]
 %DeviceName%=Install,root\qemu_debugcon
+%ServiceName%=Service_Inst
 
 [SourceDisksNames]
 1 = %DiskName%,,,\
@@ -27,26 +28,30 @@ DefaultDestDir = 12 ; DIRID_DRIVERS
 CopyFiles=DriverCopyFiles
 Include=Install.Services
 
+[Install.Services]
+AddService=%ServiceName%,0x00000002,Service_Inst
+
 [DriverCopyFiles]
 qemu_debugcon.sys
 
 [Service_Inst]
+Description    = %DriverServiceDispName%
 DisplayName    = %DriverServiceDispName%
 ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
-StartType      = 3 ; SERVICE_DEMAND_START
+StartType      = 2 ; 3= SERVICE_DEMAND_START (No start at Boot), 2= AUTO_START (Auto start at boot)
 ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
 ServiceBinary  = %12%\qemu_debugcon.sys
 LoadOrderGroup = Extended Base
 
-[Install.Services]
-AddService=qemu_debugcon, 0x00000002, Service_Inst
-
 [DefaultInstall]
 CopyFiles=DriverCopyFiles
-AddService=qemu_debugcon, 0x00000002, Service_Inst
+
+[DefaultInstall.Services]
+AddService=%ServiceName%,0x00000002,Service_Inst
 
 [Strings]
 DiskName="hon QEMU DebugCon Installation Disk"
 ProviderName="honCode 2025"
 DeviceName="hon QEMU DebugCon"
+ServiceName="qemu_debugcon"
 DriverServiceDispName="hon QEMU DebugCon Driver"
