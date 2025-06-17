@@ -6,7 +6,7 @@
 | Requirements | .NET Framework 2.0 or newer |
 
 ## How to use it
-1. Get the `DebugCon.vb` file and place it in your project.
+1. Get the `DebugCon.vb` file from this folder and place it in your project.
 2. You can use the QEMU DebugCon in your program.
 
 ## Example Usage
