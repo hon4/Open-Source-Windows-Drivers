@@ -20,6 +20,7 @@ If you know how to fix any of the following write an Issue or create a Pull Requ
 | Windows XP x64   | -         |
 | Windows 7        | Pass      |
 | Windows 7 x64    | -         |
+| ReactOS          | Pass      |
 
 ## Resource Usage
 | Type | Range |
