@@ -1,9 +1,0 @@
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\bin\Debug\dbgcon_test.exe
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\bin\Debug\dbgcon_test.pdb
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\bin\Debug\dbgcon_test.xml
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.Form1.resources
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.Resources.resources
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.vbproj.GenerateResource.Cache
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.exe
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.xml
-C:\Users\user\documents\visual studio 2010\Projects\dbgcon_test\dbgcon_test\obj\x86\Debug\dbgcon_test.pdb
